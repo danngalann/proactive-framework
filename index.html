@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/b40fc95306.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    .spacer {
+      height: 10vh;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="sticky z-index-50">
+    <div class="nav-wrapper bg-red">
+      <a href="#" class="brand-logo left text-light"><i class="fab fa-jedi-order logo-image"></i> Proactive Framework</a>
+      <ul id="nav-mobile" class="right">
+        <li><a class="text-light" href="#colors">Colors</a></li>
+        <li><a class="text-light" href="#buttons">Buttons</a></li>
+        <li><a class="text-light" href="#text">Text</a></li>
+        <li><a class="text-light" href="#forms">Forms</a></li>
+        <li><a class="text-light" href="#tables">Tables</a></li>
+        <li><a class="text-light" href="#grid">Grid</a></li>
+        <li><a class="text-light" href="#images">Images</a></li>
+        <li><a class="text-light" href="#navbar">Navbar</a></li>
+        <li><a class="text-light" href="#extra">Extras</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- COLORS -->
+  <section id="colors" class="container">
+    <h1 class="uppercase">Colors</h1>
+    <p>Add text and background colors by adding these classes to your <code>&lt;p&gt;</code></p>
+    <div class="z-depth-2">
+      <table class="centered">
+        <thead>
+          <tr>
+            <th>Text</th>
+            <th>Background</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-red">.text-red</td>
+            <td class="bg-red">.bg-red</td>
+          </tr>
+          <tr>
+            <td class="text-pink">.text-pink</td>
+            <td class="bg-pink">.bg-pink</td>
+          </tr>
+          <tr>
+            <td class="text-purple">.text-purple</td>
+            <td class="bg-purple">.bg-purple</td>
+          </tr>
+          <tr>
+            <td class="text-deep-purple">.text-deep-purple</td>
+            <td class="bg-deep-purple">.bg-deep-purple</td>
+          </tr>
+          <tr>
+            <td class="text-indigo">.text-indigo</td>
+            <td class="bg-indigo">.bg-indigo</td>
+          </tr>
+          <tr>
+            <td class="text-blue">.text-blue</td>
+            <td class="bg-blue">.bg-blue</td>
+          </tr>
+          <tr>
+            <td class="text-cyan">.text-cyan</td>
+            <td class="bg-cyan">.bg-cyan</td>
+          </tr>
+          <tr>
+            <td class="text-teal">.text-teal</td>
+            <td class="bg-teal">.bg-teal</td>
+          </tr>
+          <tr>
+            <td class="text-green">.text-green</td>
+            <td class="bg-green">.bg-green</td>
+          </tr>
+          <tr>
+            <td class="text-light-green">.text-light-green</td>
+            <td class="bg-light-green">.bg-light-green</td>
+          </tr>
+          <tr>
+            <td class="text-lime">.text-lime</td>
+            <td class="bg-lime">.bg-lime</td>
+          </tr>
+          <tr>
+            <td class="text-yellow">.text-yellow</td>
+            <td class="bg-yellow">.bg-yellow</td>
+          </tr>
+          <tr>
+            <td class="text-orange">.text-orange</td>
+            <td class="bg-orange">.bg-orange</td>
+          </tr>
+          <tr>
+            <td class="text-deep-orange">.text-deep-orange</td>
+            <td class="bg-deep-orange">.bg-deep-orange</td>
+          </tr>
+          <tr>
+            <td class="text-brown">.text-brown</td>
+            <td class="bg-brown">.bg-brown</td>
+          </tr>
+          <tr>
+            <td class="text-grey">.text-grey</td>
+            <td class="bg-grey">.bg-grey</td>
+          </tr>
+          <tr>
+            <td class="text-white bg-dark">.text-white</td>
+            <td class="bg-white">.bg-white</td>
+          </tr>
+          <tr>
+            <td class="text-black">.text-black</td>
+            <td class="bg-black text-white">.bg-black</td>
+          </tr>
+          <tr>
+            <td class="text-dark">.text-dark</td>
+            <td class="bg-dark text-white">.bg-dark</td>
+          </tr>
+          <tr>
+            <td class="text-light bg-dark">.text-light</td>
+            <td class="bg-light">.bg-light</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- BUTTONS -->
+  <section id="buttons" class="container">
+    <h1 class="uppercase">Buttons</h1>
+    <p>Two variants of buttons are available: normal and outlined. All buttons must have the <code>.btn</code> class. You can customize the color of the button and the text through the classes <code>.btn-{color}</code>, <code>.btn-outline-{color}</code> and <code>.text-{color}</code></p>
+    <div class="row">
+      <div class="col s6 text-centered">Normal</div>
+      <div class="col s6 text-centered">Outline</div>
+    </div>
+    <div class="row">
+      <div class="col s6 text-centered"><button class="btn btn-green">Green button</button></div>
+      <div class="col s6 text-centered"><button class="btn btn-outline-green">Green outline button</button></div>
+    </div>
+    <div class="row">
+      <div class="col s6 text-centered"><button class="btn btn-red text-white">Red button with white text</button></div>
+      <div class="col s6 text-centered"><button class="btn btn-outline-red">Red outline button</button></div>
+    </div>
+    <div class="row">
+      <div class="col s6 text-centered"><button class="btn btn-dark">Dark button</button></div>
+      <div class="col s6 text-centered"><button class="btn btn-outline-dark">Dark outline button</button></div>
+    </div>
+    <h2>Button sizes</h2>
+    <p>Buttons are available in three sizes: normal (<code>.btn</code>), large (<code>.btn .btn-lg</code>), and small (<code>.btn .btn-sm</code>)</p>
+    <div class="row">
+      <div class="col s4 text-centered"><button class="btn">Normal button</button></div>
+      <div class="col s4 text-centered"><button class="btn btn-lg">Large button</button></div>
+      <div class="col s4 text-centered"><button class="btn btn-sm">Small button</button></div>
+    </div>
+    <h2>Block buttons</h2>
+    <p>To make the button span the entirety of it's container, use the class <code>.btn .btn-block</code></p>
+    <button class="btn btn-green btn-block">Block button</button>
+  </section>
+  <section id="text" class="container">
+    <h1 class="uppercase">Text</h1>
+    <p>By default, headers have a <em>Raleway</em> font. All other texts (paragraphs, inputs, links, etc) will have a <em>Montserrat</em> font. Proactive Framework does not provide more fonts, but feel free to customize them with your own CSS.</p>
+    <h2>Headers</h2>
+    <p>Proactive Framwork provides default sizes for headers of all levels.</p>
+    <div id="header-levels" class="z-depth-2 p-20">
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      <h6>Header 6</h6>
+    </div>
+    <h2>Text transformations</h2>
+    <p>Proactive framework provides an easy way to transform text, so you don't have to worry about content.</p>
+    <div class="row">
+      <div class="col s4"><code>.uppercase</code></div>
+      <div class="col s4"><code>.lowercase</code></div>
+      <div class="col s4"><code>.capital</code></div>
+    </div>
+    <div class="row d-flex">
+      <div class="col s4"><p class="uppercase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius laboriosam dolores nobis repellendus magnam minima neque qui quis nostrum similique!</p></div>
+      <div class="col s4"><p class="lowercase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius laboriosam dolores nobis repellendus magnam minima neque qui quis nostrum similique!</p></div>
+      <div class="col s4"><p class="capital">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius laboriosam dolores nobis repellendus magnam minima neque qui quis nostrum similique!</p></div>
+    </div>
+    <h2>Text flow</h2>
+    <p>Proactive Framwork provides an easy way to style responsive text. Just add <code>.flow-text</code> to any block of text to optimize readability.</p>
+    <table class="centered">
+      <thead>
+        <tr>
+          <th>Normal text</th>
+          <th>Flow text</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam unde, minus fuga ut nemo, aspernatur cum quo dolor facere rerum mollitia voluptate labore deserunt sequi porro repudiandae fugiat iusto soluta?</td>
+          <td class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam unde, minus fuga ut nemo, aspernatur cum quo dolor facere rerum mollitia voluptate labore deserunt sequi porro repudiandae fugiat iusto soluta?</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="forms" class="container">
+    <h1 class="uppercase">Forms</h1>
+    <p>Proactive Framework provides an easy way to create responsive forms. In this example you have all you need to create your own forms.</p>
+    <h2>Example:</h2>
+    <form action="">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" disabled />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+        <label class="form-check-label" for="defaultCheck1">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+        <label class="form-check-label" for="exampleRadios1">
+          Default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+        <label class="form-check-label" for="exampleRadios2">
+          Second default radio
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+      </div>
+      <button class="btn btn-green" type="submit">Submit</button>
+    </form>
+    <h2>Code:</h2>
+    <pre class="z-depth-2">
+      <code>
+        &lt;form action=""&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="name"&gt;Name&lt;/label&gt;
+            &lt;input type="text" name="name" id="name" class="form-control" /&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" name="email" id="email" class="form-control" disabled /&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;
+            &lt;select class="form-control" id="exampleFormControlSelect1"&gt;
+              &lt;option&gt;1&lt;/option&gt;
+              &lt;option&gt;2&lt;/option&gt;
+              &lt;option&gt;3&lt;/option&gt;
+              &lt;option&gt;4&lt;/option&gt;
+              &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="exampleFormControlSelect2"&gt;Example multiple select&lt;/label&gt;
+            &lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;
+              &lt;option&gt;1&lt;/option&gt;
+              &lt;option&gt;2&lt;/option&gt;
+              &lt;option&gt;3&lt;/option&gt;
+              &lt;option&gt;4&lt;/option&gt;
+              &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div class="form-check"&gt;
+            &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck1" /&gt;
+            &lt;label class="form-check-label" for="defaultCheck1"&gt;
+              Default checkbox
+            &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="form-check"&gt;
+            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked /&gt;
+            &lt;label class="form-check-label" for="exampleRadios1"&gt;
+              Default radio
+            &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="form-check"&gt;
+            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" /&gt;
+            &lt;label class="form-check-label" for="exampleRadios2"&gt;
+              Second default radio
+            &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="message"&gt;Message&lt;/label&gt;
+            &lt;textarea class="form-control" name="message" id="" cols="30" rows="10"&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+          &lt;button class="btn btn-green" type="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+      </code>
+    </pre>
+  </section>
+  <section id="tables" class="container">
+    <h1>TABLES</h1>
+    <p>Proactive framework provides an easy way to create responsive tables. This is the default look for a table, with no added classes.</p>
+    <table>
+      <thead>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+      </tbody>
+    </table>
+    <h2>Center table content</h2>
+    <p>You can easily center the contents of a table by adding the <code>.centered</code> class.</p>
+    <table class="centered">
+      <thead>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+      </tbody>
+    </table>
+    <h2>Extra effects</h2>
+    <p>You can also create a stripped table with hover effects by adding the classes <code>.striped</code> and <code>.hoverable</code></p>
+    <table class="centered striped hoverable">
+      <thead>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+      </tbody>
+    </table>
+  </section>
+  <section id="grid" class="container">
+    <h1 class="uppercase">Grid</h1>
+    <p>When creating a grid layout, each parent element is divided in twelve columns.</p>
+    <div class="row">
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">1</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">2</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">3</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">4</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">5</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">6</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">7</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">8</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">9</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">10</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">11</div>
+      </div>
+      <div class="col s1">
+        <div class="bg-green p10 b5 text-centered text-white">12</div>
+      </div>
+    </div>
+    <p>Each row will have a <code>.row</code> class, and each column will have a <code>.col</code> class. You can specify responsive breapoints for small devices with <code>.s{col-span}</code>, medium devices with <code>.m{col-span}</code> and large devices with <code>.l{col-span}</code></p>
+    <div class="row">
+      <div class="col s12 bg-red text-white text-centered">This div has a colspan of 12</div>
+      <div class="col s6 bg-red text-white text-centered">This div has a colspan of 6</div>
+    </div>
+    <p>A responsive grid layout can be created using different colspans for different breakpoints. Use the dev tools of your browser to check the look of the following layout.</p>
+    <div class="row">
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">1</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">2</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">3</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">4</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">5</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">6</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">7</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">8</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">9</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">10</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">11</div>
+      </div>
+      <div class="col s12 m4 l1">
+        <div class="bg-green p10 b5 text-centered text-white">12</div>
+      </div>
+    </div>
+    <pre class="z-depth-2">
+      <code>
+        &lt;div class="row"&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;1&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;2&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;3&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;4&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;5&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;6&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;7&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;8&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;9&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;10&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;11&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="col s12 m4 l1"&gt;
+            &lt;div class="bg-green p10 b5 text-centered text-white"&gt;12&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+    </pre class="z-depth-2">
+    <h2>Offsetting</h2>
+    <p>You can specify column offset with the class <code>.offset-s{ncol}</code>. Offsets also provide with the same <code>s,m,l</code> breakpoints.</p>
+    <div class="row">
+      <div class="col s12 bg-red text-white text-centered">This div has a colspan of 12</div>
+      <div class="col s6 offset-s6 bg-red text-white text-centered">This div has a colspan of 6 with an offset of 6</div>
+    </div>
+  </section>
+  <section id="images" class="container">
+    <h1 class="uppercase">Images</h1>
+    <p>We provide a couple classes to style images: <code>.img-fluid</code> and <code>.img-thumbnail</code></p>
+    <h2>Responsive images</h2>
+    <p>Responsive images will resize according to their container. Always occupying the maximum witdh available. Resize your browser to see the effects.</p>
+    <div class="d-flex justify-center">
+      <img style="max-height:300px;" src="https://source.unsplash.com/random" class="img-fluid z-depth-3" alt="">
+    </div>
+    <h2>Thumbnail images</h2>
+    <p>Thumbnail images have a default height and width, plus rounded corners. Shadows can be added using the <code>.z-depth{1-5}</code> classes.</p>
+    <p>Note that, if the image does not have a 1:1 aspect ratio, it will be cropped.</p>
+    <!-- .row*3>.col.s12.m4*3>img[src={https://source.unsplash.com/collection/251966}].img-fluid.img-thumbnail.z-depth-2 -->
+    <div class="row">
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+    </div>
+    <div class="row">
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+    </div>
+    <div class="row">
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+      <div class="col s12 m4"><img src="https://source.unsplash.com/collection/251966" alt="" class="img-fluid img-thumbnail z-depth-2"></div>
+    </div>
+  </section>
+  <section id="navbar" class="container">
+    <h1 class="uppercase">Navbar</h1>
+    <p>Proactive Framework provives customizable, semi-responsive* navigation bars. The following is an example of a complete navigation bar, with its source code.</p>
+    <p class="note">*Note that, for a totally responsive navbar, a JavaScript solution will be needed.</p>
+    <nav class="z-index-20">
+      <div class="nav-wrapper bg-dark">
+        <a href="#" class="brand-logo left text-light"><i class="fas fa-dumbbell logo-image"></i>Local Gym</a>
+        <ul id="nav-mobile" class="right">
+          <li><a class="text-light" href="#">Home</a></li>
+          <li><a class="text-light" href="#">About</a></li>
+          <li><a class="text-light" href="#">Our Work</a></li>
+          <li><a class="text-light" href="#">Contact</a></li>          
+        </ul>
+      </div>
+    </nav>
+    <pre class="z-depth-2">
+      <code>
+        &lt;nav&gt;
+          &lt;div class="nav-wrapper bg-dark"&gt;
+            &lt;a href="#" class="brand-logo left text-light"&gt;&lt;i class="fas fa-dumbbell logo-image"&gt;&lt;/i&gt;Local Gym&lt;/a&gt;
+            &lt;ul id="nav-mobile" class="right"&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;Our Work&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;          
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      </code>
+    </pre>
+    <h2>Switching navbar content</h2>
+    <p>You can switch the position of the logo and the links by using the <code>.right</code> and <code>.left</code> classes on the <code>a</code> and the <code>ul</code> tags.</p>
+    <p>Here is an example of the same navbar, after switching the position of the links.</p>
+    <nav>
+      <div class="nav-wrapper bg-dark">
+        <a href="#" class="brand-logo right text-light"><i class="fas fa-dumbbell logo-image"></i>Local Gym</a>
+        <ul id="nav-mobile" class="left">
+          <li><a class="text-light" href="#">Home</a></li>
+          <li><a class="text-light" href="#">About</a></li>
+          <li><a class="text-light" href="#">Our Work</a></li>
+          <li><a class="text-light" href="#">Contact</a></li>          
+        </ul>
+      </div>
+    </nav>
+    <pre class="z-depth-2">
+      <code>
+        &lt;nav&gt;
+          &lt;div class="nav-wrapper bg-dark"&gt;
+            &lt;a href="#" class="brand-logo right text-light"&gt;&lt;i class="fas fa-dumbbell logo-image"&gt;&lt;/i&gt;Local Gym&lt;/a&gt;
+            &lt;ul id="nav-mobile" class="left"&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;Our Work&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="text-light" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;          
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      </code>
+    </pre>
+    <h2>Sticky navbar</h2>
+    <p>There's also a sticky navbar, which will always stay on top of the page when scrolled past it's position. You can achieve this effect by adding <code>.sticky</code> on the <code>nav</code> tag, like the navigation bar on this site.</p>
+  </section>
+  <section id="extra" class="container">
+    <h1>Extras</h1>
+    <p>Non-standard functionality. The documentation for this section is not as exhaustive.</p>
+    <h2>Shadows</h2>
+    <p>Proactive Framework provides with five standard shadow looks you can add to any element</p>
+    <div class="row d-flex justify-center">
+      <div class="col s12 m2">
+        <p class="z-depth-1 p20 text-centered">z-depth-1</p>
+      </div>
+      <div class="col s12 m2">
+        <p class="z-depth-2 p20 text-centered">z-depth-2</p>
+      </div>
+      <div class="col s12 m2">
+        <p class="z-depth-3 p20 text-centered">z-depth-3</p>
+      </div>
+      <div class="col s12 m2">
+        <p class="z-depth-4 p20 text-centered">z-depth-4</p>
+      </div>
+      <div class="col s12 m2">
+        <p class="z-depth-5 p20 text-centered">z-depth-5</p>
+      </div>
+    </div>
+    <h2>z-index</h2>
+    <p>You can customize the z-index of any object by using the <code>z-index-{}</code> class. Levels go from 10 to 100</p>
+    <p class="note">Tip: Check the navbars of this site.</p>
+  </section>
+</body>
+
+</html>

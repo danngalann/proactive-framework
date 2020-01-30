@@ -1,0 +1,32 @@
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Padding
+@for $i from 1 through 10 {
+    .p#{$i*5} {
+        padding: $i*5px;
+    }
+}
+
+// Flexbox
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+// Variable z-index
+@for $i from 1 to 11 {
+    .z-index-#{$i*10} {
+        z-index: $i*10;
+    }
+}

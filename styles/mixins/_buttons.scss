@@ -1,0 +1,31 @@
+@mixin btn-variant($color) {
+  background-color: $color;
+  transition: background-color 0.1s;
+
+  // Calcular el color de la letra del botón en función de la luminosidad del color
+  @if lightness($color) < 50 {
+    color: map-get($colors, white);
+  } @else {
+    color: map-get($colors, black);
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($color, 5%);
+    transition: background-color 0.4s;
+  }
+}
+
+@mixin btn-outline-variant($color) {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid $color;
+  transition: background-color 0.1s;
+  color: $color !important;
+
+  &:hover {    
+    color: $white !important;
+    cursor: pointer;
+    background-color: $color;
+    transition: background-color 0.1s;
+  }
+}
